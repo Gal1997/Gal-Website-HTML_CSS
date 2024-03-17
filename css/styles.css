@@ -199,7 +199,7 @@ a {
 .button {
   margin: 1rem 0;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 550;
   text-transform: uppercase;
   padding: 2rem 3rem;
   border-radius: 40px;
@@ -230,11 +230,17 @@ a {
 .button--get_started {
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
+  text-align: center;
 }
 
 .button--get_started:hover {
   background-color: #05cdf0;
   border-color: #05cdf0;
+}
+
+.button--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .button--block {
@@ -486,4 +492,46 @@ a {
 
 .testimonial .quote {
   margin-left: 6rem;
+}
+
+/* Callouts */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .button {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .button {
+    justify-self: start;
+    margin: 0 2rem;
+  }
 }
